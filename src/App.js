@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.css";
+import BottomNav from "./components/bottom-nav";
+import TopNav from "./components/top-nav";
 
 function App() {
   return (
     <div className="App">
-      <h1> Hello React </h1>
+      <TopNav />
+      <BottomNav />
     </div>
   );
 }
