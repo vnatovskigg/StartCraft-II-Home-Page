@@ -1,0 +1,14 @@
+.container {
+  height: 5vh;
+  padding: 0 5%;
+  background: rgba(8, 12, 20, 0.95);
+  border-bottom: 1px solid #192937;
+  box-shadow: 0 2px 1px 0 black;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}

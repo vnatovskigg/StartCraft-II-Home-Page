@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./index.module.css";
 
-const Nav = (props) => {
+const BottomNav = (props) => {
   return (
-    <div className={styles[`${props.position}-container`]}>
+    <div className={styles.container}>
       <ul className={styles.list}>{props.children}</ul>
     </div>
   );
 };
 
-export default Nav;
+export default BottomNav;

@@ -1,14 +1,14 @@
 .list-item,
 .list-item-active {
   font-family: "eurostile-extended";
-  font-size: 9pt;
+  font-size: 8pt;
   letter-spacing: 1px;
-  display: table-cell;
+  display: inline;
   vertical-align: middle;
-  height: 5vh;
+  /* height: 5vh; */
   line-height: 5vh;
-  padding: 0 4%;
-  color: #abd9de;
+  padding: 0 2%;
+  color: #427e97;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
@@ -17,21 +17,8 @@
   cursor: pointer;
 }
 
-.list-item:first-child {
-  border-left: 1px solid #1d2b35;
-}
-
 .list-item:last-child {
-  border-left: 1px solid #1d2b35;
-  position: absolute;
-  right: 2%;
-  padding: 0 0.8em;
-  margin-right: 4.5em;
-}
-
-.icon {
-  font-size: 8pt;
-  color: #5c7c97;
+  border: none;
 }
 
 .list-item:hover,

@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: "eurostile-extended";
   src: url("https://use.typekit.net/af/d32dfa/00000000000000000001799c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")

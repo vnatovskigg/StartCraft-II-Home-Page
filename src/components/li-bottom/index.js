@@ -1,17 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
-import { BiPlusMedical } from "react-icons/bi";
 
 
-const TopLi = ({text}) => {
+const BotLi = ({text}) => {
   const [active, setActive] = useState(false);
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
-    if (text !== "plus") {
-      setClicked(!clicked);
-    }
-    
+    setClicked(!clicked);
   }
 
   const handleMouseIn = () => {
@@ -39,12 +35,12 @@ const TopLi = ({text}) => {
          onMouseLeave={handleMouseOut}
          className={ clicked ? styles['list-item-active'] : styles["list-item"]}
       >
-        <p>{text === "plus" ? <BiPlusMedical className={styles.icon} /> : text}</p>
-        {active && text !== "plus" && (
+        <p>{text}</p>
+        {active && (
           <div className={active ? styles.on : styles.off}></div>
         )}
     </li>
   )
 };
 
-export default TopLi;
+export default BotLi;

@@ -1,20 +1,30 @@
 import React from "react";
 import "./App.css";
-import Li from "./components/list-item";
-import Nav from "./components/navigation";
+import TopLi from "./components/list-item";
+import BotLi from './components/li-bottom';
+import BottomNav from "./components/bottom-nav";
+import TopNav from "./components/top-nav";
 
 function App() {
   return (
     <div className="App">
-      <Nav position="top">
-        <Li text="campign" />
-        <Li text="co-op" />
-        <Li text="multiplayer" />
-        <Li text="arcade" />
-        <Li text="collections" isCurrent={true} />
-        <Li text="replays" />
-      </Nav>
-      <Nav position="bottom" />
+      <TopNav>
+        <TopLi text="campign" />
+        <TopLi text="co-op" />
+        <TopLi text="multiplayer" />
+        <TopLi text="arcade" />
+        <TopLi text="collections" />
+        <TopLi text="replays" />
+        <TopLi text="plus" />
+      </TopNav>
+      <BottomNav>
+        <BotLi text="skins"  />
+        <BotLi text="announcers"  />
+        <BotLi text="emoticons"  />
+        <BotLi text="portraits"  />
+        <BotLi text="decals"  />
+        <BotLi text="animations"  />
+      </BottomNav>
     </div>
   );
 }
